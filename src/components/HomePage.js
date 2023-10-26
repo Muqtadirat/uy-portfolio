@@ -1,4 +1,5 @@
 import Splitter from "./Splitter";
+import Experience from "./Experience";
 
 function HomePage() {
   return (
@@ -26,6 +27,7 @@ function HomePage() {
         </div>
       </div>
       <Splitter />
+      <Experience />
     </div>
   );
 }
