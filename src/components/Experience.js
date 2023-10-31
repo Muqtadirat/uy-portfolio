@@ -9,21 +9,22 @@ function UtilityLabel({ text }) {
 function Experience() {
   return (
     <div className="Experience">
-      <div className=" absolute border bg-greyscale-20 h-[2673px] w-[1512px] left-0 top-[1822px]">
-        <div className="absolute border w-[843px] h-[2260px] top-[333px] left-[597px]">
+      <div className=" absolute bg-greyscale-20 h-[2673px] w-[1512px] left-0 top-[1822px]">
+        <div className="absolute w-[843px] h-[2260px] top-[333px] left-[597px]">
           {" "}
-          <div className="wrapper border flex flex-col absolute items-start text-greyscale-90 top-[40px] w-[843px] gap-[72px]">
-            <div className="border relative w-[829px] h-[300px]">
-              <div className="border absolute w-[318px] top-[38px]">
+          <div className="wrapper flex flex-col absolute items-start text-greyscale-90 top-[40px] w-[843px] gap-[72px]">
+            {/* <div className="columns-container h-[700px] overflow-y-auto"> */}
+            <div className="relative w-[829px] h-[300px]">
+              <div className="absolute w-[318px] top-[38px] text-[32px]">
                 Jul 21' - Present
               </div>
 
-              <div className="border inline-flex flex-col items-start absolute gap-[16px] top-0 left-[406px]">
-                <div className="border inline-flex flex-col items-start relative gap-[8px] flex-[0 0 auto]">
-                  <div className="border relative w-fit font-largescreen-subheading f-[32px] font-black">
+              <div className="inline-flex flex-col items-start absolute gap-[16px] top-0 left-[406px]">
+                <div className="inline-flex flex-col items-start relative gap-[8px] flex-[0 0 auto]">
+                  <div className="relative w-fit font-largescreen-subheading text-[32px] font-black">
                     Aufera
                   </div>
-                  <div className="border relative w-fit font-largescreen-subheading f-[32px] font-black">
+                  <div className="relative w-fit font-largescreen-subheading font-black text-[24px]">
                     Product Design Lead
                   </div>
                 </div>
@@ -51,17 +52,17 @@ function Experience() {
               </div>
             </div>
 
-            <div className="border relative w-[829px] h-[540px]">
-              <div className="border absolute w-[318px] top-[38px]">
+            <div className="relative w-[829px] h-[540px]">
+              <div className="absolute w-[318px] top-[38px] text-[32px]">
                 Mar 22' - Present
               </div>
 
-              <div className="border inline-flex flex-col items-start absolute gap-[16px] top-0 left-[406px]">
-                <div className="border inline-flex flex-col items-start relative gap-[8px] flex-[0 0 auto]">
-                  <div className="border relative w-fit font-largescreen-subheading f-[32px] font-black">
-                    Mecho Autotech Ltd(YC21)
+              <div className="inline-flex flex-col items-start absolute gap-[16px] top-0 left-[406px]">
+                <div className="inline-flex flex-col items-start relative gap-[8px] flex-[0 0 auto]">
+                  <div className="relative w-fit font-largescreen-subheading font-black text-[32px] text-left">
+                    Mecho Autotech Ltd (YC21)
                   </div>
-                  <div className="border relative w-fit font-largescreen-subheading f-[32px] font-black">
+                  <div className="relative w-fit font-largescreen-subheading font-black text-[24px]">
                     Product Designer
                   </div>
                 </div>
@@ -98,17 +99,17 @@ function Experience() {
               </div>
             </div>
 
-            <div className="border relative w-[829px] h-[252px]">
-              <div className="border absolute w-[318px] top-[38px]">
+            <div className="relative w-[829px] h-[252px]">
+              <div className="absolute w-[318px] top-[38px] text-[32px]">
                 Oct 21' - Feb 22'
               </div>
 
-              <div className="border inline-flex flex-col items-start absolute gap-[16px] top-0 left-[406px]">
-                <div className="border inline-flex flex-col items-start relative gap-[8px] flex-[0 0 auto]">
-                  <div className="border relative w-fit font-largescreen-subheading f-[32px] font-black">
+              <div className="inline-flex flex-col items-start absolute gap-[16px] top-0 left-[406px]">
+                <div className="inline-flex flex-col items-start relative gap-[8px] flex-[0 0 auto]">
+                  <div className="relative w-fit font-largescreen-subheading font-black text-[32px]">
                     Casa
                   </div>
-                  <div className="border relative w-fit font-largescreen-subheading f-[32px] font-black">
+                  <div className="relative w-fit font-largescreen-subheading font-black text-[24px]">
                     Product Designer
                   </div>
                 </div>
@@ -130,17 +131,17 @@ function Experience() {
               </div>
             </div>
 
-            <div className="border relative w-[829px] h-[252px]">
-              <div className="border absolute w-[318px] top-[38px]">
+            <div className="relative w-[829px] h-[252px]">
+              <div className="absolute w-[318px] top-[38px] text-[32px]">
                 Nov 21' - Jan 22'
               </div>
 
-              <div className="border inline-flex flex-col items-start absolute gap-[16px] top-0 left-[406px]">
-                <div className="border inline-flex flex-col items-start relative gap-[8px] flex-[0 0 auto]">
-                  <div className="border relative w-fit font-largescreen-subheading f-[32px] font-black">
+              <div className="inline-flex flex-col items-start absolute gap-[16px] top-0 left-[406px]">
+                <div className="inline-flex flex-col items-start relative gap-[8px] flex-[0 0 auto]">
+                  <div className="relative w-fit font-largescreen-subheading font-black text-[32px]">
                     Ocity
                   </div>
-                  <div className="border relative w-fit font-largescreen-subheading f-[32px] font-black">
+                  <div className="relative w-fit font-largescreen-subheading font-black text-[24px]">
                     UI/UX Designer
                   </div>
                 </div>
@@ -162,18 +163,18 @@ function Experience() {
               </div>
             </div>
 
-            <div className="border relative w-[829px] h-[264px]">
-              <div className="border absolute w-[318px] top-[38px]">
+            <div className="relative w-[829px] h-[264px]">
+              <div className="absolute w-[318px] top-[38px] text-[32px]">
                 Oct 20' - Jan 22'
               </div>
 
-              <div className="border inline-flex flex-col items-start absolute gap-[16px] top-0 left-[406px]">
-                <div className="border inline-flex flex-col items-start relative gap-[8px] flex-[0 0 auto]">
-                  <div className="border relative w-fit font-largescreen-subheading f-[32px] font-black">
+              <div className="inline-flex flex-col items-start absolute gap-[16px] top-0 left-[406px]">
+                <div className="inline-flex flex-col items-start relative gap-[8px] flex-[0 0 auto]">
+                  <div className="relative w-fit font-largescreen-subheading font-black text-[32px] text-left">
                     Africa Content Market <br />
                     Limited (ACOMART)
                   </div>
-                  <div className="border relative w-fit font-largescreen-subheading f-[32px] font-black">
+                  <div className="relative w-fit font-largescreen-subheading text-[24px] font-black">
                     Product Designer
                   </div>
                 </div>
@@ -192,17 +193,17 @@ function Experience() {
               </div>
             </div>
 
-            <div className="border relative w-[829px] h-[252px]">
-              <div className="border absolute w-[318px] top-[38px]">
+            <div className="relative w-[829px] h-[252px]">
+              <div className="absolute w-[318px] top-[38px] text-[32px]">
                 Jul 20' - May 21'
               </div>
 
-              <div className="border inline-flex flex-col items-start absolute gap-[16px] top-0 left-[406px]">
-                <div className="border inline-flex flex-col items-start relative gap-[8px] flex-[0 0 auto]">
-                  <div className="border relative w-fit font-largescreen-subheading f-[32px] font-black">
+              <div className="inline-flex flex-col items-start absolute gap-[16px] top-0 left-[406px]">
+                <div className="inline-flex flex-col items-start relative gap-[8px] flex-[0 0 auto]">
+                  <div className="relative w-fit font-largescreen-subheading font-black text-[32px]">
                     Doctoora
                   </div>
-                  <div className="border relative w-fit font-largescreen-subheading f-[32px] font-black">
+                  <div className="relative w-fit font-largescreen-subheading text-[24px] font-black">
                     Product Graphic Designer
                   </div>
                 </div>
@@ -225,9 +226,10 @@ function Experience() {
                 </ul>
               </div>
             </div>
+            {/* </div> */}
           </div>
         </div>
-        <div className="border w-[472px] h-[160px] top-[13px] left-16 absolute">
+        <div className="w-[472px] h-[160px] top-[13px] left-16 absolute">
           <div className="absolute top-0 left-0 text-[80px] font-black text-left font-largescreen-largedisplay text-greyscale-100">
             WORK <br /> EXPERIENCE
           </div>
