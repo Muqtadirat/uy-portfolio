@@ -5,7 +5,7 @@ import CustomRoutes from "./components/CustomRoutes";
 function App() {
   return (
     <div className="App container">
-      <NavBar className="sticky" />
+      <NavBar />
       <CustomRoutes />
 
       {/* <Footer /> */}
