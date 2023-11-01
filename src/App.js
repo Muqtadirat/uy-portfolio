@@ -1,12 +1,14 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
-import HomePage from "./components/HomePage";
+import CustomRoutes from "./components/CustomRoutes";
 
 function App() {
   return (
     <div className="App container">
-      <NavBar />
-      <HomePage />
+      <NavBar className="sticky" />
+      <CustomRoutes />
+
+      {/* <Footer /> */}
     </div>
   );
 }
