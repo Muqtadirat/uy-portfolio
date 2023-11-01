@@ -1,16 +1,92 @@
+import React from "react";
+import { Link } from "react-router-dom";
+// import "../style/card.css";
+import Aufera from "../images/Aufera-card.png";
+import MechoWeb from "../images/Mecho-card.png";
+import Acomart from "../images/Acomart-card.png";
+import Moovas from "../images/Moovas-card.png";
+import MechoEnter from "../images/MechoEnterprise-card.png";
 
+// function Label(text) {
+//   return (
+//     <div className="label-wrapper">
+//       <div className="label-text">{text}</div>
+//     </div>
+//   );
+// }
+
+// function Card(title) {
+//   return (
+//     <div>
+//       <div className="cards">
+//         <div className="group">
+//           <div className="overlap-group">
+//             <div className="rectangle" />
+//             <div className="frame">
+//               <div className="div">{title}</div>
+//               <Label className="label" divClassName="instance-node" />
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+function LargeCard({ projectPage, imgSrc, imgAlt }) {
+  const imgStyle = {
+    width: "688px",
+    height: "721px",
+  };
+
+  return (
+    <div>
+      <a href={projectPage}>
+        <img src={imgSrc} alt={imgAlt} style={imgStyle} />
+      </a>
+    </div>
+  );
+}
+function SmallCard({ projectPage, imgSrc, imgAlt }) {
+  const imgStyle = {
+    width: "688px",
+    height: "505px",
+  };
+
+  return (
+    <div>
+      <a href={projectPage}>
+        <img src={imgSrc} alt={imgAlt} style={imgStyle} />
+      </a>
+    </div>
+  );
+}
 
 function Projects() {
   return (
-    <div className="Projects">
+    <div className="Project">
       <div className="wrapper absolute top-[4622px] left-72">
         <div className="top-0 left-0 text-[80px] font-black text-left font-largescreen-largedisplay text-greyscale-100">
           SEE MY
           <br />
           WORK
         </div>
-        <div className="card-box inline-flex items-start absolute gap-32 top-[4855px] left-72">
-          <div className="flex-col inline-flex items-start gap-40"></div>
+
+        <div className="card-box inline-flex items-start absolute gap-12 top-[250px] left-[-180px] bg-transparent w-[1368px]">
+          <div className="flex-col inline-flex items-start relative flex-[0 0 auto] gap-40">
+            <Link to="/aufera">
+              <LargeCard imgSrc={Aufera} imgAlt={"Aufera"} />
+            </Link>
+
+            <SmallCard imgSrc={MechoWeb} imgAlt={"Mecho Website Redesign"} />
+            <SmallCard imgSrc={Acomart} imgAlt={"Acomart"} />
+          </div>
+
+          <div className="flex-col inline-flex items-start relative flex-[0 0 auto] gap-40">
+            <SmallCard imgSrc={Moovas} imgAlt={"Moovas"} />
+            <SmallCard imgSrc={Moovas} imgAlt={"Parkstar"} />
+            <LargeCard imgSrc={MechoEnter} imgAlt={"Mecho Enterprise"} />
+          </div>
         </div>
       </div>
     </div>
