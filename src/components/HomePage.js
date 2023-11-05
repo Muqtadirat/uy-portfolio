@@ -4,8 +4,8 @@ import Projects from "./Projects";
 
 function HomePage() {
   return (
-    <div className="HomePage bg-base-colorssurface flex flex-row justify-center w-full">
-      <div className=" container bg-base-colorssurface w-[1512px] h-[6866px] relative">
+    <div className="HomePage bg-base-colorssurface flex flex-row justify-center w-full h-[6866px]">
+      <div className=" container bg-base-colorssurface relative">
         <div className="intro absolute">
           <div className="introName inline-flex flex-col items-start gap-[8px] absolute op-[149px] left-[72px]">
             <div className="text-wrapper relative w-fit mt-[-1.00px] font-[largescreen-mediumdisplay-font-family] text-[60px] text-greyscale-90 ">
@@ -26,10 +26,10 @@ function HomePage() {
             </p>
           </div>
         </div>
+        <Splitter />
+        <Experience />
+        <Projects />
       </div>
-      <Splitter />
-      <Experience />
-      <Projects />
     </div>
   );
 }
