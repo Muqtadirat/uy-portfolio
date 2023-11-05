@@ -65,16 +65,16 @@ function SmallCard({ projectPage, imgSrc, imgAlt }) {
 function Projects() {
   return (
     <div className="Project">
-      <div className="wrapper absolute top-[4622px] left-72">
-        <div className="top-0 left-0 text-[80px] font-black text-left font-largescreen-largedisplay text-greyscale-100">
+      <div className="wrapper absolute top-[4622px] left-[72px]">
+        <div className="top-0 left-0 text-[80px] lea font-black text-left font-largescreen-largedisplay text-greyscale-100">
           SEE MY
           <br />
           WORK
         </div>
 
-        <div className="card-box inline-flex items-start absolute gap-12 top-[250px] left-[-180px] bg-transparent w-[1368px]">
-          <div className="flex-col inline-flex items-start relative flex-[0 0 auto] gap-40">
-            <Link to="/aufera">
+        <div className="card-box inline-flex items-start absolute gap-[12px] top-[350px] left-0 bg-transparent w-[1368px]">
+          <div className="flex-col inline-flex items-start relative flex-[0 0 auto] gap-[40px]">
+            <Link to="/auferaComp/aufera">
               <LargeCard imgSrc={Aufera} imgAlt={"Aufera"} />
             </Link>
 
@@ -82,7 +82,7 @@ function Projects() {
             <SmallCard imgSrc={Acomart} imgAlt={"Acomart"} />
           </div>
 
-          <div className="flex-col inline-flex items-start relative flex-[0 0 auto] gap-40">
+          <div className="flex-col inline-flex items-start relative flex-[0 0 auto] gap-[40px]">
             <SmallCard imgSrc={Moovas} imgAlt={"Moovas"} />
             <SmallCard imgSrc={Moovas} imgAlt={"Parkstar"} />
             <LargeCard imgSrc={MechoEnter} imgAlt={"Mecho Enterprise"} />

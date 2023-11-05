@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Aufera from "./Aufera";
+import Aufera from "./auferaComp/Aufera";
 import HomePage from "./HomePage";
 
 function CustomRoutes() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/aufera" element={<Aufera />} />
+      <Route path="/auferaComp/aufera" element={<Aufera />} />
     </Routes>
   );
 }
