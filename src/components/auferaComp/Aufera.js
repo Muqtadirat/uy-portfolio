@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import backArrow from "./images/back-arrow.svg";
 import CaseStudy from "./CaseStudy";
 import UserPersona from "./UserPersona";
+import Wireframe from "./Wireframe";
 
 function Aufera() {
   return (
@@ -14,6 +15,7 @@ function Aufera() {
       </button>
       <CaseStudy />
       <UserPersona />
+      <Wireframe />
     </div>
   );
 }
