@@ -22,7 +22,7 @@ function NavBar() {
   }, []);
 
   return (
-    <nav className="NavBar sticky top-0 z-50 ">
+    <nav className="NavBar sticky top-0 z-50 w-full ">
       <div className=" container flex justify-between items-center p-6 bg-greyscale-10 h-104 ">
         <img src={logo} className="logo" alt="UY-logo" style={logoStyle}></img>
         <div className="wrapper items-center flex flex-row flex-wrap space-x-16">
