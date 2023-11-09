@@ -229,13 +229,13 @@ function Experience() {
             {/* </div> */}
           </div>
         </div>
-        <div className="w-[472px] h-[160px] top-[13px] left-16 absolute">
+        <div className="w-[472px] h-[160px] top-[13px] left-[72px] absolute">
           <div className="absolute top-0 left-0 text-[80px] font-black text-left font-largescreen-largedisplay text-greyscale-100">
             WORK <br /> EXPERIENCE
           </div>
         </div>
 
-        <div className="absolute left-[72px] top-[277px] text-greyscale-95 rounded-[4px] flex w-fit justify-center items-center px-10 py-6 bg-base-colorsprimary-blue hover:bg-base-colorssecondary-blue cursor-pointer">
+        <div className="absolute left-[72px] top-[277px] text-greyscale-95 rounded-[4px] flex w-fit justify-center items-center px-[24px] py-[16px] bg-base-colorsprimary-blue hover:bg-base-colorssecondary-blue cursor-pointer">
           <button>Download my resume</button>
         </div>
       </div>
