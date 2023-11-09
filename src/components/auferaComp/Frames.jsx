@@ -3,7 +3,7 @@ import frame from "./images/frames.png"
 function Frames() {
   return (
     <div className="Frames">
-      <div className="architecture flex my-[88px] text-left gap-[32px]">
+      <div className="flex pt-[88px] pb-[96px] text-left gap-[32px]">
         <p className="text-greyscale-40 w-[668px] font-bold text-[24px] font-largescreen-caption leading-[24px]">
           Wireframes
         </p>
