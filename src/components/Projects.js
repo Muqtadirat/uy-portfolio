@@ -79,7 +79,10 @@ function Projects() {
             </Link>
 
             <SmallCard imgSrc={MechoWeb} imgAlt={"Mecho Website Redesign"} />
-            <SmallCard imgSrc={Acomart} imgAlt={"Acomart"} />
+
+            <Link to="/acomartComp/acomart">
+              <SmallCard imgSrc={Acomart} imgAlt={"Acomart"} />
+            </Link>
           </div>
 
           <div className="flex-col inline-flex items-start relative flex-[0 0 auto] gap-[40px]">
