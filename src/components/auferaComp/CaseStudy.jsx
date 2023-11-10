@@ -12,7 +12,7 @@ function CaseStudy() {
           href="http://www.aufera.com"
           target="_blank"
           rel="noreferrer"
-          className="inline-flex text-[24px]"
+          className="inline-flex text-[24px] font-bold"
         >
           www.aufera.com <img src={outArrow} alt="Outward arrow" />{" "}
         </a>
