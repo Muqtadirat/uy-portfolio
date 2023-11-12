@@ -87,7 +87,11 @@ function Projects() {
 
           <div className="flex-col inline-flex items-start relative flex-[0 0 auto] gap-[40px]">
             <SmallCard imgSrc={Moovas} imgAlt={"Moovas"} />
-            <SmallCard imgSrc={Moovas} imgAlt={"Parkstar"} />
+
+            <Link to="/parkstarComp/parkstar">
+              <SmallCard imgSrc={Moovas} imgAlt={"Parkstar"} />
+            </Link>
+            
             <LargeCard imgSrc={MechoEnter} imgAlt={"Mecho Enterprise"} />
           </div>
         </div>
