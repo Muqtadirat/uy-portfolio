@@ -5,16 +5,16 @@ function CaseStudy() {
   return (
     <div className="CaseStudy mx-[72px]">
       <h1 className="flex mt-[40px] font-black font-largescreen-largedisplay text-[80px] leading-[80px]">
-        Afrostream (Case Study)
+        Parkstar(Exploration)
       </h1>
       <p className="flex mt-[16px]">
         <a
-          href="http://www.myafrostream.tv"
+          href="https://www.figma.com/proto/Iu9l5LROfqAYzZ8PLiHBOT/Cloudfift-Test---Parkstar"
           target="_blank"
           rel="noreferrer"
           className="inline-flex text-[24px] font-bold"
         >
-          www.myafrostream.tv <img src={outArrow} alt="Outward arrow" />{" "}
+          View prototype<img src={outArrow} alt="Outward arrow" />{" "}
         </a>
       </p>
 
