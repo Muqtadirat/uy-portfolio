@@ -4,6 +4,7 @@ import HomePage from "./HomePage";
 import Aufera from "./auferaComp/Aufera";
 import Acomart from "./acomartComp/Acomart";
 import Parkstar from "./parkstarComp/Parkstar";
+import Moovas from "./moovasComp/Moovas";
 
 function CustomRoutes() {
   return (
@@ -12,6 +13,7 @@ function CustomRoutes() {
       <Route path="/auferaComp/aufera" element={<Aufera />} />
       <Route path="/acomartComp/acomart" element={<Acomart />} />
       <Route path="/parkstarComp/parkstar" element={<Parkstar />} />
+      <Route path="/moovasComp/parkstar" element={<Moovas />} />
     </Routes>
   );
 }
