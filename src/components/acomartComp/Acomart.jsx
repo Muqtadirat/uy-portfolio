@@ -22,12 +22,13 @@ function Acomart() {
         <p>Open Project</p>
         <p>
           <a
-            href="http://www.aufera.com"
+            href="http://www.myafrostream.tv"
             target="_blank"
             rel="noreferrer"
             className="inline-flex text-[24px] font-bold mt-[16px]"
           >
-            www.aufera.com <img src={outArrow} alt="Outward arrow" />{" "}
+            www.myafrostream.tv
+            <img src={outArrow} alt="Outward arrow" />{" "}
           </a>
         </p>
       </div>
