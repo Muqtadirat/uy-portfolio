@@ -5,7 +5,7 @@ function CaseStudy() {
   return (
     <div className="CaseStudy mx-[72px]">
       <h1 className="flex mt-[40px] font-black font-largescreen-largedisplay text-[80px] leading-[80px]">
-        Parkstar(Exploration)
+        Parkstar (Exploration)
       </h1>
       <p className="flex mt-[16px]">
         <a

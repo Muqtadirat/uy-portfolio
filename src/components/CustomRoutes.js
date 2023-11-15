@@ -13,7 +13,7 @@ function CustomRoutes() {
       <Route path="/auferaComp/aufera" element={<Aufera />} />
       <Route path="/acomartComp/acomart" element={<Acomart />} />
       <Route path="/parkstarComp/parkstar" element={<Parkstar />} />
-      <Route path="/moovasComp/parkstar" element={<Moovas />} />
+      <Route path="/moovasComp/moovas" element={<Moovas />} />
     </Routes>
   );
 }
