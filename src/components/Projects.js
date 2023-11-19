@@ -94,7 +94,9 @@ function Projects() {
               <SmallCard imgSrc={Moovas} imgAlt={"Parkstar"} />
             </Link>
 
-            <LargeCard imgSrc={MechoEnter} imgAlt={"Mecho Enterprise"} />
+            <Link to="/mechoEnterpriseComp/mechoEnterprise">
+              <LargeCard imgSrc={MechoEnter} imgAlt={"Mecho Enterprise"} />
+            </Link>
           </div>
         </div>
       </div>
