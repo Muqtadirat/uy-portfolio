@@ -19,7 +19,7 @@ function CaseStudy() {
       </p>
 
       <div className="mt-[120px] mb-[88px]">
-        <img src={acomartHeader} alt="Aufera header" />
+        <img src={acomartHeader} alt="Afrostream header" />
       </div>
 
       <div className="details text-[18px] w-[1368px]">

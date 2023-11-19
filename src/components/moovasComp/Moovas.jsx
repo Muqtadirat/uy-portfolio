@@ -6,9 +6,9 @@ import WireFrame from "./WireFrame";
 
 function Moovas() {
   return (
-    <div className="Moovas w-full h-full bg-base-colorssurface font-largescreen-body text-white leading-[24px]">
+    <div className="Moovas w-full h-full bg-base-colorssurface font-largescreen-body text-lg text-white leading-[24px]">
       <button className="flex ml-[72px] pt-[135px]">
-        <Link to="/" className=" inline-flex gap-[4px]">
+        <Link to="/" className=" inline-flex gap-[4px] text-base">
           <img src={backArrow} alt="Back arrow" /> Back{" "}
         </Link>
       </button>

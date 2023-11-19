@@ -22,7 +22,7 @@ function CaseStudy() {
 
       {/* Header image */}
       <div className="mt-[120px] mb-[88px]">
-        <img src={moovasHeader} alt="Parkstar header" />
+        <img src={moovasHeader} alt="Moovas header" />
       </div>
 
       {/* Text */}
