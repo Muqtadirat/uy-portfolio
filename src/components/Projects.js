@@ -78,7 +78,9 @@ function Projects() {
               <LargeCard imgSrc={Aufera} imgAlt={"Aufera"} />
             </Link>
 
-            <SmallCard imgSrc={MechoWeb} imgAlt={"Mecho Website Redesign"} />
+            <Link to="/mechoWebComp/mechoWebsite">
+              <SmallCard imgSrc={MechoWeb} imgAlt={"Mecho Website Redesign"} />
+            </Link>
 
             <Link to="/acomartComp/acomart">
               <SmallCard imgSrc={Acomart} imgAlt={"Acomart"} />
