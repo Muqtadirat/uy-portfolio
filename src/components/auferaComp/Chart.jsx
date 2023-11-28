@@ -1,10 +1,15 @@
+import { motion } from "framer-motion";
 import chart from "./images/chart.png";
 
 function Chart() {
   return (
-    <div className="Chart">
+    <motion.div
+      className="Chart w-[1023px] md:w-auto"
+      animate={{ x: 0, opacity: 1 }}
+      initial={{ x: -50, opacity: 0 }}
+    >
       <img src={chart} alt="Organizational chart" />
-    </div>
+    </motion.div>
   );
 }
 

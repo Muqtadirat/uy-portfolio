@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import onboard1 from "./images/onboarding-1.png";
 import onboard2 from "./images/Onboarding-2.png";
 import signUpPage from "./images/Sign-up.png";
@@ -37,26 +38,30 @@ function CatalogueImg({ imgSrc, imgAlt, height }) {
 
 function FinalProduct() {
   return (
-    <div className="FinalProduct bg-greyscale-100 h-[2970px] mt-[96px] text-greyscale-10">
-      <div className="mx-[72px] py-[80px] text-[18px]">
-        <h2 className="text-left font-medium text-[48px] font-largescreen-xlargedisplay leading-[48px]">
+    <div className="FinalProduct bg-greyscale-100 mt-6 md:mt-[96px] text-greyscale-10">
+      <div className=" mx-6 md:mx-[72px] py-[33px] md:py-[80px] text-base md:text-lg">
+        <h2 className="text-left font-medium text-2xl md:text-5xl font-largescreen-xlargedisplay leading-[48px]">
           Final Product
         </h2>
 
-        <div className="flex mt-[103px]">
+        <div className="flex flex-col md:flex-row gap-6 mt-10 md:mt-[103px]">
           <div className="w-[392px] text-left leading-[24px]">
-            <p className="font-bold text-[24px] w-[233px] mb-[16px]">
+            <p className="font-bold text-[24px] md:w-[233px] mb-1 md:mb-[16px]">
               Seamless, fast onboarding process
             </p>
             <p className="text-greyscale-40">
               Designed to onboard users with <br /> little to no friction
             </p>
           </div>
-          <div className="ml-[177px] flex gap-[32px]">
+          <motion.div
+            className="md:ml-[177px] flex gap-[32px]"
+            animate={{ x: 0, opacity: 1 }}
+            initial={{ x: -50, opacity: 0 }}
+          >
             <OnboardImg imgSrc={onboard1} imgAlt="Onboarding 1" />
             <OnboardImg imgSrc={onboard2} imgAlt="Onboarding 2" />
             <OnboardImg imgSrc={signUpPage} imgAlt="Sign up page" />
-          </div>
+          </motion.div>
         </div>
 
         <div className="mt-[163px]">
@@ -82,14 +87,16 @@ function FinalProduct() {
           </div>
         </div>
 
-        <div className="flex justify-center gap-[16px]"> 
-          <div className="w-[392px] text-left mx-auto leading-[24px] self-center">
+        <div className="flex flex-col pb-16 md:pb-20 md:flex-row justify-center mt-6 gap-[42px] md:gap-[16px]">
+          <div className="md:w-[392px] text-left mx-auto leading-[24px] self-center">
             <p className="font-bold text-[24px] mb-[16px]">In-app wallet</p>
             <p className="text-greyscale-40">
               Manage your funds easily as a host and as a renter
             </p>
           </div>
-          <OnboardImg imgSrc={walletImg} imgAlt="Wallet feature" />
+          <div className=" mx-auto">
+            <OnboardImg imgSrc={walletImg} imgAlt="Wallet feature" />
+          </div>
         </div>
       </div>
     </div>

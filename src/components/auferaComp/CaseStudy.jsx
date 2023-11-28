@@ -1,10 +1,12 @@
+import { motion } from "framer-motion";
 import outArrow from "./images/outward-arrow.svg";
 import headerImg from "./images/aufera-header.png";
+import mobileHeader from "./images/aufera-header-mobile.png";
 
 function CaseStudy() {
   return (
-    <div className="caseStudy mx-[72px]">
-      <h1 className="flex mt-[40px] font-black font-largescreen-largedisplay text-[80px]">
+    <div className="caseStudy mx-6 md:mx-[72px]">
+      <h1 className="flex mt-[40px] font-black font-largescreen-largedisplay text-left text-4xl md:text-[80px]">
         Aufera (Case Study)
       </h1>
       <p className="flex mt-[16px]">
@@ -12,22 +14,26 @@ function CaseStudy() {
           href="http://www.aufera.com"
           target="_blank"
           rel="noreferrer"
-          className="inline-flex text-[24px] font-bold"
+          className="inline-flex text-xl md:text-2xl font-bold"
         >
           www.aufera.com <img src={outArrow} alt="Outward arrow" />{" "}
         </a>
       </p>
 
-      <div className="mt-[120px] mb-[88px]">
-        <img src={headerImg} alt="Aufera header" />
+      {/* Header Image */}
+
+      <div className=" mt-12 md:mt-[120px] mb-10 md:mb-[88px]">
+        <img src={headerImg} alt="Aufera header" className="hidden md:block" />
+        <img src={mobileHeader} alt="Aufera header" className="lg:hidden" />
       </div>
 
-      <div className="details text-[18px] leading-[24px] w-[1368px]">
-        <div className="overview flex gap-[32px] mb-[88px] text-left">
-          <div className="text-[48px] leading-[48px] w-[668px] font-largescreen-largedisplay font-medium">
+      {/* Overview */}
+      <div className="details leading-[24px] md:max-w-full">
+        <div className="overview flex flex-col md:flex-row gap-[32px] mb-10 md:mb-[88px] text-left">
+          <div className=" text-2xl md:text-5xl leading-[48px] w-[668px] font-largescreen-largedisplay font-medium">
             <h2>Overview</h2>
           </div>
-          <div className="w-[668px]">
+          <div className="md:w-[668px]">
             <p>
               Aufera is community based car rental app that allows people host
               or rent a vehicle to other users of the app using a peer-to-peer
@@ -35,7 +41,7 @@ function CaseStudy() {
               increase access to car rental options in Lagos, Nigeria.
             </p>
 
-            <p className="mt-[3rem]">
+            <p className=" mt-4 md:mt-[3rem]">
               My approach to the interaction design of this product was user
               centered design and this helped me focus on a 4-step cycle design
               process of user research, product definition, sketching &
@@ -44,12 +50,13 @@ function CaseStudy() {
           </div>
         </div>
 
-        <div className="userResearch flex gap-[32px] mb-[88px] text-left">
-          <div className="text-[48px] leading-[48px] font-largescreen-largedisplay font-medium w-[668px]">
+        {/* User research */}
+        <div className="userResearch flex flex-col md:flex-row gap-[32px] mb-10 md:mb-[88px] text-left">
+          <div className="text-2xl md:text-5xl leading-[48px] font-largescreen-largedisplay font-medium w-[668px]">
             <h2>User Research</h2>
           </div>
 
-          <div className="w-[668px]">
+          <div className="md:w-[668px]">
             <ul>
               The product research for Aufera was conducted to
               <li className="list-disc mt-[2rem] ml-12">
@@ -88,95 +95,139 @@ function CaseStudy() {
           </div>
         </div>
 
-        <div className="criteria flex gap-[32px] mb-[88px] text-left font-bold leading-[24px]">
-          <div className="font-largescreen-largedisplay text-greyscale-40 text-[24px] w-[668px]">
+        {/* Criteria */}
+        <div className="criteria flex flex-col md:flex-row gap-[32px] mb-8 md:mb-[88px] text-left font-bold leading-[24px]">
+          <div className="font-largescreen-largedisplay text-greyscale-40 text-xl md:text-2xl md:w-[668px]">
             <p>Recruitment Criteria</p>
           </div>
 
-          <div className="wrapper w-[668px]">
-            <div className="renter">
-              <p className="mb-[16px]">Renters</p>
-              <div className="inline-flex gap-[32px] items-start text-[16px] mb-[64px]">
+          {/* Horizontal scroll */}
+          <motion.div
+            className="wrapper w-full md:w-[668px] overflow-x-auto"
+            animate={{ x: 0, opacity: 1 }}
+            initial={{ x: -50, opacity: 0 }}
+          >
+            <div className="renter ">
+              <p className="mb-[16px] text-xl md:text-2xl">Renters</p>
+
+              <div className="flex gap-3 md:gap-[32px] items-start md:text-[16px] md:mb-[64px]">
                 <p className="border rounded-[4px] px-[16px] py-[16px] border-greyscale-20">
-                  Aged 18 - 58
+                  <span className="inline-block text-center min-w-max md:min-w-[auto]">
+                    Aged 18 - 58
+                  </span>
                 </p>
+
                 <p className="border rounded-[4px] px-[16px] py-[16px] border-greyscale-20">
-                  Has a valid driver's license
+                  <span className="inline-block text-center min-w-max md:min-w-[auto]">
+                    Has a valid driver's license
+                  </span>
                 </p>
+
                 <p className="border rounded-[4px] px-[16px] py-[16px] border-greyscale-20">
-                  Has a valid ID
+                  <span className="inline-block text-center min-w-max md:min-w-[auto]">
+                    Has a valid ID
+                  </span>
                 </p>
               </div>
             </div>
 
-            <div className="host">
-              <p className="mb-[16px]">Host</p>
-              <div className="inline-flex gap-[32px] items-start text-[16px]">
+            <div className="host mt-5 md:mt-0">
+              <p className="mb-[16px] text-xl md:text-2xl">Host</p>
+
+              <div className="inline-flex gap-[32px] items-start md:text-[16px]">
                 <p className="border rounded-[4px] px-[16px] py-[16px] border-greyscale-20">
-                  Aged 18 - 58
+                  <span className="inline-block text-center min-w-max md:min-w-[auto]">
+                    Aged 18 - 58
+                  </span>
                 </p>
                 <p className="border rounded-[4px] px-[16px] py-[16px] border-greyscale-20">
-                  Own's at least one car
+                  <span className="inline-block text-center min-w-max md:min-w-[auto]">
+                    Own's at least one car
+                  </span>
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="questions flex gap-[32px] mb-[96px] text-left font-bold leading-[24px]">
-          <div className="font-largescreen-largedisplay text-greyscale-40 text-[24px] w-[668px]">
+        {/* Recruitment questions */}
+        <div className="questions flex flex-col md:flex-row gap-[32px] mb-[96px] text-left font-bold leading-[24px]">
+          <div className="font-largescreen-largedisplay text-greyscale-40 text-xl md:text-2xl md:w-[668px]">
             <div>
               <p>Recruitment Questions</p>
             </div>
           </div>
 
-          <div className="wrapper w-[668px]">
+          <motion.div
+            className="wrapper w-full md:w-[668px] overflow-x-auto"
+            animate={{ x: 0, opacity: 1 }}
+            initial={{ x: -50, opacity: 0 }}
+          >
             <div className="renter">
               <div>
-                <p className="mb-[16px]">Renters</p>
+                <p className="mb-[16px] text-xl md:text-2xl">Renters</p>
               </div>
 
-              <div className="flex flex-col gap-[32px] items-start text-[16px] mb-[64px]">
+              <div className="flex md:flex-col gap-3 md:gap-[32px] items-start md:text-[16px] md:mb-[64px]">
                 <p className="border rounded-[4px] px-[16px] py-[16px] border-greyscale-20">
-                  How do you move around Lagos?
+                  <span className="inline-block text-center min-w-max md:min-w-[auto]">
+                    How do you move around Lagos?
+                  </span>
                 </p>
                 <p className="border rounded-[4px] px-[16px] py-[16px] border-greyscale-20">
-                  What do you love about moving around Lagos?
+                  <span className="inline-block text-center min-w-max md:min-w-[auto]">
+                    What do you love about moving around Lagos?
+                  </span>
                 </p>
                 <p className="border rounded-[4px] px-[16px] py-[16px] border-greyscale-20">
-                  What do you dislike about moving around Lagos?
+                  <span className="inline-block text-center min-w-max md:min-w-[auto]">
+                    What do you dislike about moving around Lagos?
+                  </span>
                 </p>
                 <p className="border rounded-[4px] px-[16px] py-[16px] border-greyscale-20">
-                  How would you prefer to move around?
+                  <span className="inline-block text-center min-w-max md:min-w-[auto]">
+                    How would you prefer to move around?
+                  </span>
                 </p>
                 <p className="border rounded-[4px] px-[16px] py-[16px] border-greyscale-20">
-                  Have you ever rented a car, If yes how was your experience?
+                  <span className="inline-block text-center min-w-max md:min-w-[auto]">
+                    Have you ever rented a car, If yes how was your experience?
+                  </span>
                 </p>
               </div>
             </div>
 
-            <div className="host">
+            <div className="host mt-5 md:mt-0">
               <div>
-                <p className="mb-[16px]">Hosts</p>
+                <p className="mb-[16px] text-xl md:text-2xl">Hosts</p>
               </div>
 
-              <div className="flex flex-col gap-[32px] items-start text-[16px]">
+              <div className="flex md:flex-col gap-[32px] items-start text-[16px]">
                 <p className="border rounded-[4px] px-[16px] py-[16px] border-greyscale-20">
-                  How do you move around Lagos?
+                  <span className="inline-block text-center min-w-max md:min-w-[auto]">
+                    How do you move around Lagos?
+                  </span>
                 </p>
                 <p className="border rounded-[4px] px-[16px] py-[16px] border-greyscale-20">
-                  If yes, how do you rent your car?
+                  <span className="inline-block text-center min-w-max md:min-w-[auto]">
+                    If yes, how do you rent your car?
+                  </span>
                 </p>
                 <p className="border rounded-[4px] px-[16px] py-[16px] border-greyscale-20">
-                  What are your favorite things about renting your car out?
+                  <span className="inline-block text-center min-w-max md:min-w-[auto]">
+                    What are your favorite things about renting your car out?
+                  </span>
                 </p>
                 <p className="border rounded-[4px] px-[16px] py-[16px] border-greyscale-20">
-                  What are your least favorite things about renting your car
-                  out?
+                  <span className="inline-block text-center min-w-max md:min-w-[auto]">
+                    What are your least favorite things about renting your car
+                    out?
+                  </span>
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
+          {/*  */}
         </div>
       </div>
     </div>
