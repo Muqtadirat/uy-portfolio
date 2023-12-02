@@ -24,13 +24,13 @@ function CaseStudy() {
 
       <div className=" mt-12 md:mt-[120px] mb-10 md:mb-[88px]">
         <img src={headerImg} alt="Aufera header" className="hidden md:block" />
-        <img src={mobileHeader} alt="Aufera header" className="lg:hidden" />
+        <img src={mobileHeader} alt="Aufera header" className="md:hidden" />
       </div>
 
       {/* Overview */}
       <div className="details leading-[24px] md:max-w-full">
         <div className="overview flex flex-col md:flex-row gap-[32px] mb-10 md:mb-[88px] text-left">
-          <div className=" text-2xl md:text-5xl leading-[48px] w-[668px] font-largescreen-largedisplay font-medium">
+          <div className=" text-2xl md:text-5xl leading-[48px] md:w-[668px] font-largescreen-largedisplay font-medium">
             <h2>Overview</h2>
           </div>
           <div className="md:w-[668px]">

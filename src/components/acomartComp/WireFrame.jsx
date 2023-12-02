@@ -45,7 +45,7 @@ function WireframeDesk({ imgSrc, height }) {
 
 function WireFrame() {
   return (
-    <div className="WireFrame mx-[72px]">
+    <div className="WireFrame mx-6 md:mx-[72px]">
       <div className="flex mb-[88px] text-left gap-[32px]">
         <div className="font-largescreen-largedisplay text-greyscale-40 font-bold text-[24px] w-[668px]">
           Wireframe

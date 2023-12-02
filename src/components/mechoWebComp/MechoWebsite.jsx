@@ -8,8 +8,8 @@ import NewLook from "./NewLook";
 
 function MechoWebsite() {
     return (
-      <div className="MechoWebsite w-full h-full bg-base-colorssurface font-largescreen-body text-white text-lg leading-[24px]">
-        <button className="flex ml-[72px] pt-[135px] text-base">
+      <div className="MechoWebsite sm:max-w-sm md:w-full h-full bg-base-colorssurface font-largescreen-body text-white text-lg leading-[24px]">
+        <button className="flex ml-6 md:ml-[72px] pt-10 md:pt-[135px] text-base">
           <Link to="/" className=" inline-flex gap-[4px]">
             <img src={backArrow} alt="Back arrow" /> Back{" "}
           </Link>
