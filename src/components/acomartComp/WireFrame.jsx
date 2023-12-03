@@ -17,11 +17,13 @@ import moviedesktop from "./images/Movies-desktop.png";
 import movieDeskCard from "./images/movieCard-desktop.png";
 import seriesDesktop from "./images/Series-card-desktop.png";
 import afrocinemaDesk from "./images/Afrocinema-2.png";
+import { motion } from "framer-motion";
 
 function WireframeImg({ imgSrc, imgAlt, height }) {
   const imgStyle = {
     width: "241px",
     height: `${height}px`,
+    maxWidth: "none"
   };
 
   return (
@@ -34,6 +36,7 @@ function WireframeDesk({ imgSrc, height }) {
   const imgStyle = {
     width: "656px",
     height: `${height}px`,
+    maxWidth: "none"
   };
 
   return (
@@ -46,12 +49,12 @@ function WireframeDesk({ imgSrc, height }) {
 function WireFrame() {
   return (
     <div className="WireFrame mx-6 md:mx-[72px]">
-      <div className="flex mb-[88px] text-left gap-[32px]">
-        <div className="font-largescreen-largedisplay text-greyscale-40 font-bold text-[24px] w-[668px]">
+      <div className="flex flex-col md:flex-row md:mb-[88px] text-left gap-2 md:gap-[32px]">
+        <div className="font-largescreen-largedisplay text-greyscale-40 font-bold text-xl md:text-2xl md:w-[668px]">
           Wireframe
         </div>
 
-        <div className="w-[668px] text-greyscale-90 text-[18px]">
+        <div className="md:w-[668px] text-greyscale-90 text-base md:text-lg">
           <p>
             I have shown mid-high fidelity views of some of the screens across
             the different clients below.
@@ -59,7 +62,11 @@ function WireFrame() {
         </div>
       </div>
 
-      <div className="frames flex flex-col">
+      <motion.div
+        className="frames flex flex-col overflow-x-auto mt-6"
+        animate={{ x: 0, opacity: 1 }}
+        initial={{ x: -50, opacity: 0 }}
+      >
         <div className="flex gap-[41px] mb-[88px]">
           <WireframeImg imgSrc={loginFrame} imgAlt="Login page" height={521} />
           <WireframeImg
@@ -123,9 +130,13 @@ function WireFrame() {
           />
           <WireframeImg imgSrc={profile} imgAlt="Profile page" height={521} />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="flex flex-col">
+      <motion.div
+        className="flex flex-col overflow-x-auto"
+        animate={{ x: 0, opacity: 1 }}
+        initial={{ x: -50, opacity: 0 }}
+      >
         <div className="deskFrame flex mb-[100px] gap-[53px]">
           <WireframeDesk imgSrc={moviedesktop} height={667} />
           <WireframeDesk imgSrc={movieDeskCard} height={667} />
@@ -135,7 +146,7 @@ function WireFrame() {
           <WireframeDesk imgSrc={seriesDesktop} height={844} />
           <WireframeDesk imgSrc={afrocinemaDesk} height={399} />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

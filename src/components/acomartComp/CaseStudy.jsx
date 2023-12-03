@@ -43,7 +43,7 @@ function CaseStudy() {
           </div>
         </div>
         {/*  */}
-        <div className="userResearch flex flex-col md:flex-row gap-2 md:gap-[32px] mb-[88px] text-left">
+        <div className="userResearch flex flex-col md:flex-row gap-2 md:gap-[32px] mb-6 md:mb-[88px] text-left">
           <div className="text-2xl md:text-5xl leading-[48px] font-largescreen-largedisplay font-medium w-[668px]">
             <h2>User Research</h2>
           </div>
@@ -56,11 +56,16 @@ function CaseStudy() {
             <p className="mt-4 md:mt-[2rem]">
               As such, only competitive research was done for this project
             </p>
+
+            <p className="text-[12px] mt-[24px] italic md:hidden">
+              * I am unable to currently share more insights into the research
+              results because of non-disclosure and IP agreements
+            </p>
           </div>
         </div>
         {/*  */}
         <div className="analysis flex flex-col md:flex-row gap-[32px] mb-6 md:mb-[88px] text-left font-bold">
-          <div className="font-largescreen-largedisplay text-greyscale-40 text-[24px] w-[668px]">
+          <div className="font-largescreen-largedisplay text-greyscale-40 text-xl md:text-2xl md:w-[668px]">
             <p>Secondary Research/Competitive Analysis</p>
           </div>
 
@@ -85,6 +90,11 @@ function CaseStudy() {
                 AmazonPrime
               </p>
             </div>
+
+            <p className="text-[12px] mt-[24px] italic md:hidden">
+              * I am unable to currently share details of this analysis because
+              of non-disclosure and IP agreements
+            </p>
           </motion.div>
         </div>
         {/*  */}

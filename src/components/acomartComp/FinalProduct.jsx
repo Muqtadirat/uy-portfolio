@@ -12,21 +12,21 @@ import jokerPhone3 from "./images/joker-iPhone3.png"
 
 function FinalProduct() {
   return (
-    <div className="FinalProduct bg-greyscale-100 text-greyscale-10 mt-[88px] h-fit leading-[24px]">
-      <div className="mx-[72px] text-[18px] pt-[80px]">
-        <h2 className="text-left font-medium text-[48px] font-largescreen-xlargedisplay leading-[48px]">
+    <div className="FinalProduct bg-greyscale-100 text-greyscale-10 mt-8 md:mt-[88px] h-auto leading-[24px]">
+      <div className="mx-6 md:mx-[72px] text-base md:text-lg  pt-6 md:pt-[80px]">
+        <h2 className="text-left font-medium text-2xl md:text-5xl font-largescreen-xlargedisplay leading-[48px]">
           Final Product
         </h2>
 
-        <div className="mt-[62px] text-left">
-          <p className="mb-[16px] font-bold text-greyscale-50">Afrostream</p>
+        <div className=" mt-10 md:mt-[62px] text-left">
+          <p className=" mb-2 md:mb-4 font-bold text-greyscale-50">Afrostream</p>
           <p>
             Afrostream is the movie streaming section of the product, it was
             categorized into movies, series, my list & downloads
           </p>
         </div>
 
-        <div className="flex mt-[108px] gap-[213px] justify-center ">
+        <div className="flex flex-col md:flex-row mt-10 md:mt-[108px] gap-[213px] justify-center ">
           <div className="text-wrapper text-left w-[392px] mt-[92px] mb-[68px]">
             <p className="font-bold text-[24px] text-greyscale-10 mb-[16px]">
               Movies/Series

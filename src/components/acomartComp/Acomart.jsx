@@ -7,7 +7,7 @@ import FinalProduct from "./FinalProduct";
 
 function Acomart() {
   return (
-    <div className="Acomart sm:max-w-sm md:w-full h-auto bg-base-colorssurface font-largescreen-body text-sm md:text-lg text-white leading-[24px]">
+    <div className="Acomart sm:max-w-sm md:max-w-full h-auto bg-base-colorssurface font-largescreen-body text-sm md:text-lg text-white leading-[24px]">
       <button className="flex ml-6 md:ml-[72px] pt-[135px]">
         <Link to="/" className=" inline-flex gap-[4px] text-base">
           <img src={backArrow} alt="Back arrow" /> Back{" "}

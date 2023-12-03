@@ -21,7 +21,7 @@ function Wireframe() {
 
           {/* Horizontal mobile scroll */}
           <motion.div
-            className="flex text-xs md:text-base gap-4 md:gap-8 mb-[16px]"
+            className="flex text-xs md:text-base gap-4 md:gap-8 mb-[16px] overflow-x-auto"
             animate={{ x: 0, opacity: 1 }}
             initial={{ x: -50, opacity: 0 }}
           >
