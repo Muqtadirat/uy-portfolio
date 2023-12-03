@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function CaseStudy() {
   return (
     <div className="caseStudy mx-6 md:mx-[72px]">
-      <h1 className="flex mt-[40px] font-black font-largescreen-largedisplay text-left text-4xl md:text-[80px]leading-[80px]">
+      <h1 className="flex mt-[40px] font-black font-largescreen-largedisplay text-left text-4xl md:text-[80px] leading-[80px]">
         Afrostream (Case Study)
       </h1>
       <p className="flex mt-[16px]">

@@ -8,7 +8,7 @@ import NewLook from "./NewLook";
 
 function MechoWebsite() {
     return (
-      <div className="MechoWebsite sm:max-w-sm md:w-full h-full bg-base-colorssurface font-largescreen-body text-white text-lg leading-[24px]">
+      <div className="MechoWebsite sm:max-w-sm md:max-w-full h-full bg-base-colorssurface font-largescreen-body text-white text-lg leading-[24px]">
         <button className="flex ml-6 md:ml-[72px] pt-10 md:pt-[135px] text-base">
           <Link to="/" className=" inline-flex gap-[4px]">
             <img src={backArrow} alt="Back arrow" /> Back{" "}
@@ -19,14 +19,14 @@ function MechoWebsite() {
         <OldLook />
         <NewLook />
 
-        <div className="pb-[80px] mx-auto leading-[24px]">
+        <div className=" py-8 md:pb-[80px] mx-auto leading-[24px]">
           <p>Open Project</p>
           <p>
             <a
               href="http://www.mechoautotech.com"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex text-[24px] font-bold mt-[16px]"
+              className="inline-flex text-xl md:text-2xl font-bold mt-[16px]"
             >
               www.mechoautotech.com
               <img src={outArrow} alt="Outward arrow" />{" "}

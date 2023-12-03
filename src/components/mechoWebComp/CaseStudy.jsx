@@ -1,10 +1,11 @@
 import mechoWebHeader from "./mechoWeb images/mechoWeb header.png";
+import mobileHeader from "./mechoWeb images/mobile header.png"
 import outArrow from "./mechoWeb images/outward-arrow.svg";
 
 function CaseStudy() {
   return (
-    <div className="CaseStudy mx-[72px]">
-      <h1 className="flex mt-[40px] font-black font-largescreen-largedisplay text-[80px] leading-[80px]">
+    <div className="CaseStudy mx-6 md:mx-[72px]">
+      <h1 className="flex mt-[40px] text-left text-[40px] md:text-[80px] font-black font-largescreen-largedisplay leading-10 md:leading-[80px]">
         Mecho Website Redesign
       </h1>
       <p className="flex mt-[16px]">
@@ -12,24 +13,25 @@ function CaseStudy() {
           href="http://www.mechoautotech.com"
           target="_blank"
           rel="noreferrer"
-          className="inline-flex text-[24px] font-bold"
+          className="inline-flex text-xl md:text-2xl font-bold"
         >
           www.mechoautotech.com <img src={outArrow} alt="Outward arrow" />{" "}
         </a>
       </p>
 
-      <div className="mt-[120px] mb-[88px]">
-        <img src={mechoWebHeader} alt="Mecho website header" />
+      <div className="mt-12 md:mt-[120px] mb-8 md:mb-[88px]">
+        <img src={mechoWebHeader} alt="Mecho website header" className="hidden md:block" />
+        <img src={mobileHeader} alt="Mecho website header" className="md:hidden" />
       </div>
 
       {/* Text */}
-      <div className="details text-[18px] w-[1368px]">
-        <div className="overview flex gap-[32px] mb-[88px] text-left">
-          <div className="text-[48px] leading-[48px] w-[668px] font-largescreen-largedisplay font-medium">
+      <div className="details text-base md:text-lg">
+        <div className="overview flex flex-col md:flex-row gap-2 md:gap-[32px] mb-8 md:mb-[88px] text-left">
+          <div className=" text-2xl md:text-5xl leading-[48px] md:w-[668px] font-largescreen-largedisplay font-medium">
             <h2>Overview</h2>
           </div>
 
-          <div className="w-[668px] text-greyscale-90">
+          <div className="md:w-[668px] text-greyscale-90">
             <p>
               Mecho Autotech LTD is a YCombinator backed automobile solution
               company primarily based in Lagos, Nigeria with a growing presence
@@ -50,12 +52,12 @@ function CaseStudy() {
         </div>
 
         {/*  */}
-        <div className="aim flex gap-[32px] mb-[88px] text-left">
-          <div className="text-[48px] leading-[48px] w-[668px] font-largescreen-largedisplay font-medium">
+        <div className="aim flex flex-col md:flex-row gap-2 md:gap-[32px] mb-8 md:mb-[88px] text-left">
+          <div className=" text-2xl md:text-5xl leading-[48px] md:w-[668px] font-largescreen-largedisplay font-medium">
             <h2>Aim & Outcomes</h2>
           </div>
 
-          <div className="w-[668px] text-greyscale-90">
+          <div className="md:w-[668px] text-greyscale-90">
             <p>
               The redesign was expected to create a more user-friendly outlook
               for the company to increase app downloads and increase sales.

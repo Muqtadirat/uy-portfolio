@@ -77,7 +77,7 @@ function NavBarMobile(params) {
   ];
 
   return (
-    <div className="">
+    <div className="lg:hidden">
       <Menu right isOpen={isOpen} styles={styles}>
         <ul className="flex flex-col space-y-5">
           {NavItems.map((NavItem, index) => {
