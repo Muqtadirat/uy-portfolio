@@ -7,8 +7,8 @@ import FinalProduct from "./FinalProduct";
 
 function Acomart() {
   return (
-    <div className="Acomart sm:max-w-sm md:max-w-full h-auto bg-base-colorssurface font-largescreen-body text-sm md:text-lg text-white leading-[24px]">
-      <button className="flex ml-6 md:ml-[72px] pt-[135px]">
+    <div className="Acomart w-full md:max-w-full h-auto bg-base-colorssurface font-largescreen-body text-base md:text-lg text-white leading-[24px]">
+      <button className="flex ml-6 md:ml-[72px] pt-10 md:pt-[135px]">
         <Link to="/" className=" inline-flex gap-[4px] text-base">
           <img src={backArrow} alt="Back arrow" /> Back{" "}
         </Link>
@@ -18,14 +18,14 @@ function Acomart() {
       <WireFrame />
       <FinalProduct />
 
-      <div className="w-[216px] pt-[90px] pb-[80px] mx-auto leading-[24px]">
-        <p>Open Project</p>
+      <div className="md:w-[216px] py-8 md:pt-[90px] md:pb-[80px] mx-auto leading-[24px]">
+        <p className=" text-base">Open Project</p>
         <p>
           <a
             href="http://www.myafrostream.tv"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex text-[24px] font-bold mt-[16px]"
+            className="inline-flex text-xl md:text-2xl font-bold mt-[16px]"
           >
             www.myafrostream.tv
             <img src={outArrow} alt="Outward arrow" />{" "}

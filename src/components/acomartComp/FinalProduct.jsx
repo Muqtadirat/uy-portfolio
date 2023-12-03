@@ -13,7 +13,7 @@ import jokerPhone3 from "./images/joker-iPhone3.png"
 function FinalProduct() {
   return (
     <div className="FinalProduct bg-greyscale-100 text-greyscale-10 mt-8 md:mt-[88px] h-auto leading-[24px]">
-      <div className="mx-6 md:mx-[72px] text-base md:text-lg  pt-6 md:pt-[80px]">
+      <div className="mx-6 md:mx-[72px] text-base md:text-lg pt-6 md:pt-[80px]">
         <h2 className="text-left font-medium text-2xl md:text-5xl font-largescreen-xlargedisplay leading-[48px]">
           Final Product
         </h2>
@@ -26,8 +26,8 @@ function FinalProduct() {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row mt-10 md:mt-[108px] gap-[213px] justify-center ">
-          <div className="text-wrapper text-left w-[392px] mt-[92px] mb-[68px]">
+        <div className="flex flex-col md:flex-row mt-10 md:mt-[108px] md:gap-[213px] justify-center ">
+          <div className="text-wrapper text-left md:w-[392px] mt-10 md:mt-[92px] mb-10 md:mb-[68px]">
             <p className="font-bold text-[24px] text-greyscale-10 mb-[16px]">
               Movies/Series
             </p>
@@ -60,8 +60,8 @@ function FinalProduct() {
           </div>
         </div>
 
-        <div className="mt-[160px] flex gap-[38px]">
-          <div className="flex ml-[187px]">
+        <div className="md:mt-[160px] flex flex-col-reverse md:flex-row gap-[38px]">
+          <div className="flex md:ml-[187px]">
             <img
               src={movieInfo}
               alt="Tv view"
@@ -89,8 +89,8 @@ function FinalProduct() {
             />
           </div>
 
-          <div className="text-wrapper text-right w-[392px] mt-[92px] mb-[68px]">
-            <p className="font-bold text-[24px] text-greyscale-10 mb-[16px]">
+          <div className="text-wrapper text-left md:text-right md:w-[392px] md:mt-[92px] mb-[68px]">
+            <p className="font-bold text-xl md:text-2xl text-greyscale-10 mb-[16px]">
               Exploring a movie/serie
             </p>
             <p className="text-greyscale-40">
@@ -101,8 +101,8 @@ function FinalProduct() {
           </div>
         </div>
 
-        <div className="wrapper mt-[180px] text-left">
-          <p className=" mb-4 font-bold text-[24px] text-greyscale-50">
+        <div className="wrapper md:mt-[180px] text-left">
+          <p className=" mb-4 font-bold text-xl md:text-2xl text-greyscale-50">
             Afrocinema
           </p>
           <p className="text-greyscale-40">
@@ -139,7 +139,7 @@ function FinalProduct() {
           />
         </div>
 
-        <div className="flex mt-[155px] ml-[200px] justify-center gap-[35px]">
+        <div className="flex flex-col-reverse md:flex-row mt-14 md:mt-[155px] md:ml-[200px] justify-center gap-[35px]">
           <div className="flex">
             <img
               src={jokerTv2}
@@ -168,7 +168,7 @@ function FinalProduct() {
             />
           </div>
 
-          <div className="text-wrapper text-right self-center mt-[-150px]">
+          <div className="text-wrapper text-left md:text-right self-center mt-[-150px]">
             <p className=" mb-4 font-bold text-[24px]">Ticketing</p>
             <p className="text-greyscale-40">
               Buy and pay for movie tickets right on your device
