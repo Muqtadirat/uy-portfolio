@@ -16,7 +16,7 @@ function Moovas() {
       <CaseStudy />
       <WireFrame />
 
-      <div className="md:w-[216px] pt-[120px] pb-[80px] mx-auto leading-[24px]">
+      <div className="md:w-[216px] pt-10 md:pt-[120px] pb-8 md:pb-[80px] mx-auto leading-[24px]">
         <p>Open Project</p>
         <p>
           <a
