@@ -32,7 +32,7 @@ function CaseStudy() {
       {/* Text */}
       <div className="details text-base md:text-lg md:max-w-full">
         <div className="overview flex flex-col md:flex-row gap-2 md:gap-[32px] mb-4 md:mb-[96px] text-left">
-          <div className="text-2xl md:text-5xl  leading-[48px] md:w-[668px] font-largescreen-largedisplay font-medium">
+          <div className="text-2xl md:text-5xl leading-[48px] md:w-[668px] font-largescreen-largedisplay font-medium">
             <h2>Overview</h2>
           </div>
 

@@ -25,7 +25,7 @@ function WireframeImg({ imgSrc }) {
 
 function WireFrame() {
   return (
-    <div className="WireFrame mx-[72px]">
+    <div className="WireFrame mx-6 md:mx-[72px]">
       <div className="text-left gap-[32px]">
         <div className="font-largescreen-largedisplay text-greyscale-40 font-bold text-[24px]">
           Screens
@@ -33,22 +33,22 @@ function WireFrame() {
       </div>
 
       {/* Screen images */}
-      <div className="frames mt-[88px] flex flex-col">
-        <div className="flex gap-8 mb-[88px]">
+      <div className="frames mt-2 md:mt-[88px] flex flex-col items-center">
+        <div className="flex flex-col md:flex-row gap-8 mb-[88px]">
           <WireframeImg imgSrc={signUpScreen} />
           <WireframeImg imgSrc={createAccount} />
           <WireframeImg imgSrc={otpVerified} />
           <WireframeImg imgSrc={otpEntry} />
         </div>
 
-        <div className="flex gap-8 mb-[88px]">
+        <div className="flex flex-col md:flex-row gap-8">
           <WireframeImg imgSrc={shipmentHistory} />
           <WireframeImg imgSrc={shipmentTracker} />
           <WireframeImg imgSrc={newRequest} />
           <WireframeImg imgSrc={checkout} />
         </div>
 
-        <div className="flex gap-8 mb-[88px]">
+        <div className="flex flex-col md:flex-row gap-8">
           <WireframeImg imgSrc={notifications} />
           <WireframeImg imgSrc={wallet} />
           <WireframeImg imgSrc={profilePage} />
