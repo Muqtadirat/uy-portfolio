@@ -33,8 +33,8 @@ function WireFrame() {
       </div>
 
       {/* Screen images */}
-      <div className="frames mt-2 md:mt-[88px] flex flex-col items-center">
-        <div className="flex flex-col md:flex-row gap-8 mb-[88px]">
+      <div className="frames mt-2 md:mt-[88px] gap-8 md:gap-0 flex flex-col items-center">
+        <div className="flex flex-col md:flex-row gap-8 mt-2 md:mt-0 md:mb-[88px]">
           <WireframeImg imgSrc={signUpScreen} />
           <WireframeImg imgSrc={createAccount} />
           <WireframeImg imgSrc={otpVerified} />

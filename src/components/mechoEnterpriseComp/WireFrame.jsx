@@ -7,11 +7,13 @@ import requestDetails1 from "./mechoE images/Request details1.png";
 import reqCheckout from "./mechoE images/Request checkout.png";
 import vehicleProfile from "./mechoE images/Vehicle profile.png";
 import creditAccess from "./mechoE images/Credit access.png";
+import { motion } from "framer-motion";
 
 function WireframeImg({ imgSrc, height }) {
   const imgStyle = {
     width: "668px",
     height: `${height}`,
+    maxWidth: "none",
   };
 
   return (
@@ -23,13 +25,13 @@ function WireframeImg({ imgSrc, height }) {
 
 function WireFrame() {
   return (
-    <div className="Wireframe mx-[72px]">
-      <div className="flex my-[88px] text-left gap-[32px]">
+    <div className="Wireframe mx-6 md:mx-[72px]">
+      <div className="flex flex-col md:flex-row my-6 md:my-[88px] text-left gap-2 md:gap-[32px]">
         <h2 className="font-largescreen-largedisplay text-greyscale-40 font-bold text-[24px] w-[668px]">
           Wireframes
         </h2>
 
-        <div className="w-[668px]">
+        <div className="md:w-[668px]">
           <p>
             Wireframing the interface structure was done to ease communication
             with stakeholders and serve for proof of concept for A/B testing and
@@ -42,17 +44,23 @@ function WireFrame() {
       </div>
 
       {/* Images */}
-      <div className="flex flex-wrap gap-6">
-        <WireframeImg imgSrc={allRequest} height="521px" />
-        <WireframeImg imgSrc={createReq1} height="409px" />
-        <WireframeImg imgSrc={createReq2} height="409px" />
-        <WireframeImg imgSrc={createReq3} height="409px" />
-        <WireframeImg imgSrc={reqCheckout} height="409px" />
-        <WireframeImg imgSrc={requestDetails} height="577px" />
-        <WireframeImg imgSrc={requestDetails1} height="407px" />
-        <WireframeImg imgSrc={vehicleProfile} height="498px" />
-        <WireframeImg imgSrc={creditAccess} height="622px" />
-      </div>
+      <motion.div
+        animate={{ x: 0, opacity: 1 }}
+        initial={{ x: -50, opacity: 0 }}
+        className="overflow-x-auto"
+      >
+        <div className="flex flex-wrap gap-6">
+          <WireframeImg imgSrc={allRequest} height="521px" />
+          <WireframeImg imgSrc={createReq1} height="409px" />
+          <WireframeImg imgSrc={createReq2} height="409px" />
+          <WireframeImg imgSrc={createReq3} height="409px" />
+          <WireframeImg imgSrc={reqCheckout} height="409px" />
+          <WireframeImg imgSrc={requestDetails} height="577px" />
+          <WireframeImg imgSrc={requestDetails1} height="407px" />
+          <WireframeImg imgSrc={vehicleProfile} height="498px" />
+          <WireframeImg imgSrc={creditAccess} height="622px" />
+        </div>
+      </motion.div>
     </div>
   );
 }
