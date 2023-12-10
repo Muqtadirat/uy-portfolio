@@ -1,43 +1,134 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function Splitter() {
   return (
-    <div className="Splitter hidden md:block w-[714px] h-[270px]">
+    // <div className="Splitter bg-base-colorssurface hidden md:block w-[714px] h-[270px]">
+    <div className="Splitter hidden md:block">
       {/* First section */}
 
-      <div className="wrapper font-largescreen-heading text-greyscale-40 h-[270px] w-[714px] ">
-        <div className="how-i-create-amazing absolute font-largescreen-body top-[1233px] left-[390px] text-center text-[80px] font-black">
-          How I<br />
-          create amazing
-          <br />
-          products
-        </div>
-        <div className="dormant inline-flex items-center justify-center gap-[10px] px-[40px] py-[16px] absolute top-[1266px] left-[825px] bg-greyscale-20 rounded-[4px] rotate-[4.696deg]">
-          <div className="text-wrapper relative w-fit mt-[-1.00px]">
-            Product Definition
+      <motion.div
+        /*</div>whileHover={{ opacity: 0.5 }}*/ className="normalState"
+      >
+        <div className="wrapper relative py-[320px] font-largescreen-heading text-greyscale-40">
+          <div className="amazing">
+            <h2 className=" font-largescreen-largedisplay text-[80px] font-black">
+              How I<br />
+              create amazing
+              <br />
+              products
+            </h2>
+          </div>
+
+          <div className="overlayText  text-lg flex flex-col">
+            <div
+              className="textWrapper ml-[485px] mt-[-133px]"
+              style={{ transform: "rotate(-11.027deg)" }}
+            >
+              <p className="border rounded-[4px] w-fit px-10 py-4 bg-greyscale-20 border-greyscale-20">
+                User Research
+              </p>
+            </div>
+
+            <div
+              className="textWrapper ml-[382px] mt-[52px]"
+              style={{ transform: "rotate(4.027deg)" }}
+            >
+              <p className="border rounded-[4px] w-fit px-10 py-4 bg-greyscale-20 border-greyscale-20">
+                Sketching & Wireframing
+              </p>
+            </div>
+
+            <div
+              className="textWrapper ml-[835px] mt-[-50px]"
+              style={{ transform: "rotate(4.696deg)" }}
+            >
+              <p className="border rounded-[4px] w-fit px-10 py-4 bg-greyscale-20 border-greyscale-20">
+                Product Definition
+              </p>
+            </div>
+            {/*  */}
           </div>
         </div>
-        <div className="dormant inline-flex items-center justify-center gap-[10px] px-[40px] py-[16px] absolute top-[1544px] left-[825px] bg-greyscale-20 rounded-[4px] overflow-hidden rotate-[-5.87deg]">
-          <div className="text-wrapper relative w-fit mt-[-1.00px]">
-            Developer Communication
+      </motion.div>
+      {/* 
+      <motion.div whileHover={{ opacity: 0.5 }} className="normalState">
+        <div className="wrapper font-largescreen-heading text-greyscale-40 h-[270px] w-[714px] ">
+          <div className="how-i-create-amazing absolute font-largescreen-body top-[1233px] left-[390px] text-center text-[80px] font-black">
+            How I<br />
+            create amazing
+            <br />
+            products
+          </div>
+          <div className="dormant inline-flex items-center justify-center gap-[10px] px-[40px] py-[16px] absolute top-[1266px] left-[825px] bg-greyscale-20 rounded-[4px] rotate-[4.696deg]">
+            <div className="text-wrapper relative w-fit mt-[-1.00px]">
+              Product Definition
+            </div>
+          </div>
+          <div className="dormant inline-flex items-center justify-center gap-[10px] px-[40px] py-[16px] absolute top-[1544px] left-[825px] bg-greyscale-20 rounded-[4px] overflow-hidden rotate-[-5.87deg]">
+            <div className="text-wrapper relative w-fit mt-[-1.00px]">
+              Developer Communication
+            </div>
+          </div>
+          <div className="dormant inline-flex items-center justify-center gap-[10px] px-[40px] py-[16px] absolute top-[1276px] left-[447px] bg-greyscale-20 rounded-[4px] rotate-[-11.03deg]">
+            <div className="text-wrapper relative w-fit mt-[-1.00px]">
+              User Research
+            </div>
+          </div>
+          <div className="dormant inline-flex items-center justify-center gap-[10px] px-[40px] py-[16px] absolute top-[1509px] left-[442px] bg-greyscale-20 rounded-[4px] rotate-[4.03deg]">
+            <div className="text-wrapper relative w-fit mt-[-1.00px]">
+              Sketching &amp; Wireframing
+            </div>
+          </div>
+          <div className="dormant inline-flex items-center justify-center gap-[10px] px-[40px] py-[16px] absolute top-[1387px] left-[938px] bg-greyscale-20 rounded-[4px] rotate-[4.40deg]">
+            <div className="text-wrapper relative w-fit mt-[-1.00px]">
+              User Testing
+            </div>
           </div>
         </div>
-        <div className="dormant inline-flex items-center justify-center gap-[10px] px-[40px] py-[16px] absolute top-[1276px] left-[447px] bg-greyscale-20 rounded-[4px] rotate-[-11.03deg]">
-          <div className="text-wrapper relative w-fit mt-[-1.00px]">
-            User Research
+      </motion.div> */}
+
+      {/* Hover */}
+      {/* <motion.div
+        className="hoverState"
+        initial={{ opacity: 0 }} // Set initial opacity to 0 (hidden)
+        animate={{ opacity: 1 }} // Animate opacity to 1 when the user hovers over the first section
+        style={{ opacity: 0 }}
+      >
+        <div className="wrapper font-largescreen-heading text-greyscale-40 h-[270px] w-[714px] ">
+          <div className="how-i-create-amazing absolute font-largescreen-body top-[1233px] left-[390px] text-center text-[80px] font-black">
+            How I<br />
+            create amazing
+            <br />
+            products
+          </div>
+          <div className="dormant inline-flex items-center justify-center gap-[10px] px-[40px] py-[16px] absolute top-[1266px] left-[925px] bg-purple-600 rounded-[4px] rotate-[4.696deg]">
+            <div className="text-wrapper relative w-fit mt-[-1.00px]">
+              Product Definition
+            </div>
+          </div>
+          <div className="dormant inline-flex items-center justify-center gap-[10px] px-[40px] py-[16px] absolute top-[1544px] left-[825px] bg-greyscale-20 rounded-[4px] overflow-hidden rotate-[-5.87deg]">
+            <div className="text-wrapper relative w-fit mt-[-1.00px]">
+              Developer Communication
+            </div>
+          </div>
+          <div className="dormant inline-flex items-center justify-center gap-[10px] px-[40px] py-[16px] absolute top-[1276px] left-[447px] bg-greyscale-20 rounded-[4px] rotate-[-11.03deg]">
+            <div className="text-wrapper relative w-fit mt-[-1.00px]">
+              User Research
+            </div>
+          </div>
+          <div className="dormant inline-flex items-center justify-center gap-[10px] px-[40px] py-[16px] absolute top-[1509px] left-[442px] bg-greyscale-20 rounded-[4px] rotate-[4.03deg]">
+            <div className="text-wrapper relative w-fit mt-[-1.00px]">
+              Sketching &amp; Wireframing
+            </div>
+          </div>
+          <div className="dormant inline-flex items-center justify-center gap-[10px] px-[40px] py-[16px] absolute top-[1387px] left-[938px] bg-greyscale-20 rounded-[4px] rotate-[4.40deg]">
+            <div className="text-wrapper relative w-fit mt-[-1.00px]">
+              User Testing
+            </div>
           </div>
         </div>
-        <div className="dormant inline-flex items-center justify-center gap-[10px] px-[40px] py-[16px] absolute top-[1509px] left-[442px] bg-greyscale-20 rounded-[4px] rotate-[4.03deg]">
-          <div className="text-wrapper relative w-fit mt-[-1.00px]">
-            Sketching &amp; Wireframing
-          </div>
-        </div>
-        <div className="dormant inline-flex items-center justify-center gap-[10px] px-[40px] py-[16px] absolute top-[1387px] left-[938px] bg-greyscale-20 rounded-[4px] rotate-[4.40deg]">
-          <div className="text-wrapper relative w-fit mt-[-1.00px]">
-            User Testing
-          </div>
-        </div>
-      </div>
+      </motion.div> */}
 
       {/* Second section
       <div className="overlap-group-wrapper font-largescreen-largedisplay text-center text-blue-400">
