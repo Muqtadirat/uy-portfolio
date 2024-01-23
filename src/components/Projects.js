@@ -7,7 +7,7 @@ import Acomart from "../images/Acomart-card.png";
 import Moovas from "../images/Moovas-card.png";
 import MechoEnter from "../images/MechoEnterprise-card.png";
 
-function LargeCard({ projectPage, imgSrc, imgAlt }) {
+function LargeCard({ imgSrc, imgAlt }) {
   const imgStyle = {
     width: "688px",
     height: "721px",
@@ -20,7 +20,7 @@ function LargeCard({ projectPage, imgSrc, imgAlt }) {
   );
 }
 
-function SmallCard({ projectPage, imgSrc, imgAlt }) {
+function SmallCard({ imgSrc, imgAlt }) {
   const imgStyle = {
     width: "688px",
     height: "505px",
@@ -28,17 +28,18 @@ function SmallCard({ projectPage, imgSrc, imgAlt }) {
 
   return (
     <div>
-      <a href={projectPage}>
-        <img src={imgSrc} alt={imgAlt} style={imgStyle} />
-      </a>
+      <img src={imgSrc} alt={imgAlt} style={imgStyle} />
     </div>
   );
 }
 
-function Label({ text }) {
+function Label({ text, field }) {
   return (
-    <div className="label-wrapper overflow-hidden transition-all">
-      <div className="label-text">{text}</div>
+    <div className="label-wrapper bg-white text-left text-greyscale-10 px-10 py-6">
+      <div className="label-text text-2xl font-bold">{text}</div>
+      <div className=" mt-4 px-6 py-1 bg-base-colorsprimary-blue w-fit text-white rounded">
+        <div>{field}</div>
+      </div>
     </div>
   );
 }
@@ -59,37 +60,54 @@ function Projects() {
 
         <div className="card-box inline-flex items-start gap-8">
           <div className="flex-col inline-flex items-start relative flex-[0 0 auto] gap-10">
-            {/* <Link to="/auferaComp/aufera">
-              <LargeCard imgSrc={Aufera} imgAlt={"Aufera"} />
-            </Link> */}
-
             <Link to="/auferaComp/aufera">
               <LabelledCard>
                 <LargeCard imgSrc={Aufera} imgAlt="Aufera" />
-                <Label text="Aufera Case Study " />
+                <Label text="Aufera (Case Study)" field="Travel" />
               </LabelledCard>
             </Link>
 
             <Link to="/mechoWebComp/mechoWebsite">
-              <SmallCard imgSrc={MechoWeb} imgAlt={"Mecho Website Redesign"} />
+              <LabelledCard>
+                <SmallCard imgSrc={MechoWeb} imgAlt="Mecho Website Redesign" />
+                <Label
+                  text="Mecho Website Redesign"
+                  field="Automobile Services"
+                />
+              </LabelledCard>
             </Link>
 
             <Link to="/acomartComp/acomart">
-              <SmallCard imgSrc={Acomart} imgAlt={"Acomart"} />
+              <LabelledCard>
+                <SmallCard imgSrc={Acomart} imgAlt="Acomart" />
+                <Label text="Acomart (Case Study)" field="Entertainment" />
+              </LabelledCard>
             </Link>
           </div>
 
           <div className="flex-col inline-flex items-start relative flex-[0 0 auto] gap-[40px]">
             <Link to="/moovasComp/moovas">
-              <SmallCard imgSrc={Moovas} imgAlt={"Moovas"} />
+              <LabelledCard>
+                <SmallCard imgSrc={Moovas} imgAlt="Moovas" />
+                <Label text="Moovas" field="Logistics" />
+              </LabelledCard>
             </Link>
 
             <Link to="/parkstarComp/parkstar">
-              <SmallCard imgSrc={Moovas} imgAlt={"Parkstar"} />
+              <LabelledCard>
+                <SmallCard imgSrc={Moovas} imgAlt="Parkstar" />
+                <Label
+                  text="Parkstart (Exploration)"
+                  field="Recreational Services"
+                />
+              </LabelledCard>
             </Link>
 
             <Link to="/mechoEnterpriseComp/mechoEnterprise">
-              <LargeCard imgSrc={MechoEnter} imgAlt={"Mecho Enterprise"} />
+              <LabelledCard>
+                <LargeCard imgSrc={MechoEnter} imgAlt="Mecho Enterprise" />
+                <Label text="Mecho Enterprise Application" field="Saas" />
+              </LabelledCard>
             </Link>
           </div>
         </div>
