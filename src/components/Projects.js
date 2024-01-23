@@ -7,32 +7,6 @@ import Acomart from "../images/Acomart-card.png";
 import Moovas from "../images/Moovas-card.png";
 import MechoEnter from "../images/MechoEnterprise-card.png";
 
-// function Label(text) {
-//   return (
-//     <div className="label-wrapper">
-//       <div className="label-text">{text}</div>
-//     </div>
-//   );
-// }
-
-// function Card(title) {
-//   return (
-//     <div>
-//       <div className="cards">
-//         <div className="group">
-//           <div className="overlap-group">
-//             <div className="rectangle" />
-//             <div className="frame">
-//               <div className="div">{title}</div>
-//               <Label className="label" divClassName="instance-node" />
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
 function LargeCard({ projectPage, imgSrc, imgAlt }) {
   const imgStyle = {
     width: "688px",
@@ -41,12 +15,11 @@ function LargeCard({ projectPage, imgSrc, imgAlt }) {
 
   return (
     <div>
-      <a href={projectPage}>
-        <img src={imgSrc} alt={imgAlt} style={imgStyle} />
-      </a>
+      <img src={imgSrc} alt={imgAlt} style={imgStyle} />
     </div>
   );
 }
+
 function SmallCard({ projectPage, imgSrc, imgAlt }) {
   const imgStyle = {
     width: "688px",
@@ -62,20 +35,39 @@ function SmallCard({ projectPage, imgSrc, imgAlt }) {
   );
 }
 
+function Label({ text }) {
+  return (
+    <div className="label-wrapper overflow-hidden transition-all">
+      <div className="label-text">{text}</div>
+    </div>
+  );
+}
+
+function LabelledCard({ children }) {
+  return <div className="card-container relative">{children}</div>;
+}
+
 function Projects() {
   return (
-    <div className="Project">
-      <div className="wrapper absolute top-[4622px] left-[72px]">
-        <div className="top-0 left-0 text-[80px] lea font-black text-left font-largescreen-largedisplay text-greyscale-100">
+    <div className="Project w-full md:max-w-full h-full bg-base-colorssurface font-largescreen-body text-base md:text-lg text-white leading-[24px]">
+      <div className="wrapper mx-6 md:mx-[72px] pt-14 md:pt-[8rem]">
+        <div className="text-left text-5xl md:text-[5rem] mb-6 md:mb-[4.5rem] leading-10 md:leading-[5rem] font-black font-largescreen-largedisplay text-greyscale-100">
           SEE MY
           <br />
           WORK
         </div>
 
-        <div className="card-box inline-flex items-start absolute gap-[12px] top-[350px] left-0 bg-transparent w-[1368px]">
-          <div className="flex-col inline-flex items-start relative flex-[0 0 auto] gap-[40px]">
-            <Link to="/auferaComp/aufera">
+        <div className="card-box inline-flex items-start gap-8">
+          <div className="flex-col inline-flex items-start relative flex-[0 0 auto] gap-10">
+            {/* <Link to="/auferaComp/aufera">
               <LargeCard imgSrc={Aufera} imgAlt={"Aufera"} />
+            </Link> */}
+
+            <Link to="/auferaComp/aufera">
+              <LabelledCard>
+                <LargeCard imgSrc={Aufera} imgAlt="Aufera" />
+                <Label text="Aufera Case Study " />
+              </LabelledCard>
             </Link>
 
             <Link to="/mechoWebComp/mechoWebsite">
