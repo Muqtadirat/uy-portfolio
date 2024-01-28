@@ -35,7 +35,7 @@ function NavBar() {
   // ];
 
   return (
-    <nav className="NavBar sticky top-0 z-50 w-full">
+    <nav className="NavBar fixed top-0 z-50 w-full">
       <div className="container flex justify-between items-center p-6 bg-greyscale-10 h-104">
         <Link to="/">
           <img

@@ -20,8 +20,8 @@ function HomePage() {
               <br />
               YUSSUFF
             </div>
-            {/* <p className="introDrive absolute w-[567px] top-[495px] left-[562px] font-[largescreen-body] text-greyscale-95"> */}
-            <p className="introDrive text-left text-base md:text-lg leading-6 w-[345px] md:w-[567px] md:ml-[562px] font-largescreen-body text-greyscale-95">
+        
+            <p className="introDrive text-left text-base md:text-lg leading-6 w-[345px] md:w-[567px] md:ml-[562px] pb-[22.5rem] md:pb-[13rem] font-largescreen-body text-greyscale-95">
               a result driven product designer with a proven record of
               incorporating and balancing user &amp; business needs into product
               development; with an in-depth experience in building functional,
@@ -33,7 +33,7 @@ function HomePage() {
         </div>
         <Splitter />
         <Experience />
-        {/* <Projects /> */}
+        <Projects />
       </div>
     </div>
   );

@@ -71,9 +71,9 @@ function LabelledCard({ children }) {
 
 function Projects() {
   return (
-    <div className="Project w-full md:max-w-full h-full bg-base-colorssurface font-largescreen-body text-base md:text-lg text-white leading-[24px]">
+    <div className="Project w-full md:max-w-full pb-[4.5rem] md:pb-20 h-full bg-base-colorssurface font-largescreen-body text-base md:text-lg text-white leading-[24px]">
       <div className="wrapper mx-6 md:mx-[72px] pt-14 md:pt-[8rem]">
-        <div className="text-left text-5xl md:text-[5rem] mb-6 md:mb-[4.5rem] leading-10 md:leading-[5rem] font-black font-largescreen-largedisplay text-greyscale-100">
+        <div className="text-left text-5xl md:text-[5rem] mb-[-2.5rem] md:mb-[4.5rem] leading-10 md:leading-[5rem] font-black font-largescreen-largedisplay text-greyscale-100">
           SEE MY
           <br />
           WORK

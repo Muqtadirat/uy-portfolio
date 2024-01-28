@@ -16,7 +16,7 @@ function Footer() {
   };
 
   return (
-    <div className="Footer bg-base-colorssurface absolute w-full border-t">
+    <div className="Footer hidden md:block bg-base-colorssurface absolute w-full border-t">
       <div className="w-[1368px] flex justify-between mx-auto items-center py-5">
         <img src={logo} className="logo" alt="UY-logo" style={logoStyle} />
         <div className="socials flex gap-6 ">

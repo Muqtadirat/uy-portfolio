@@ -7,7 +7,7 @@ function NavBarMobile(params) {
 
   var styles = {
     bmBurgerButton: {
-      position: "fixed",
+      position: "sticky",
       width: "36px",
       height: "30px",
       right: "36px",
@@ -34,7 +34,7 @@ function NavBarMobile(params) {
       background: "rgba(25, 25, 25, 1)",
       padding: "2.5em 1.5em 0",
       fontSize: "1.15em",
-      height: "100%",
+      height: "50%",
     },
     bmMorphShape: {
       fill: "#373a47",
@@ -92,7 +92,7 @@ function NavBarMobile(params) {
                   to={href}
                   target={newTab ? "_blank" : "_self"}
                   rel="noopener noreferrer"
-                  className=" cursor-pointer "
+                  className="cursor-pointer"
                 >
                   {title}
                 </Link>
