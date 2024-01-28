@@ -2,10 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import "../style/card.css";
 import Aufera from "../images/Aufera-card.png";
+import AuferaMobile from "../images/aufera mobile card.png";
 import MechoWeb from "../images/Mecho-card.png";
+import MechoWebMobile from "../images/mecho-web mobile.png";
 import Acomart from "../images/Acomart-card.png";
+import AcomartMobile from "../images/acomart mobile.png";
 import Moovas from "../images/Moovas-card.png";
+import MoovasMobile from "../images/moovas mobile card.png";
 import MechoEnter from "../images/MechoEnterprise-card.png";
+import MechoEmobile from "../images/mechoE mobile.png";
+import ParkstarMobile from "../images/parkstar mobile.png";
 
 function LargeCard({ imgSrc, imgAlt }) {
   const imgStyle = {
@@ -33,6 +39,19 @@ function SmallCard({ imgSrc, imgAlt }) {
   );
 }
 
+const MobileCard = ({ imgSrc, imgAlt }) => {
+  const imgStyle = {
+    width: "345px",
+    height: "369px",
+  };
+
+  return (
+    <div className="md:hidden">
+      <img src={imgSrc} alt={imgAlt} style={imgStyle} />
+    </div>
+  );
+};
+
 function Label({ text, field }) {
   return (
     <div className="label-wrapper bg-white text-left text-greyscale-10 px-10 py-6">
@@ -45,7 +64,9 @@ function Label({ text, field }) {
 }
 
 function LabelledCard({ children }) {
-  return <div className="card-container relative">{children}</div>;
+  return (
+    <div className="card-container relative hidden md:block">{children}</div>
+  );
 }
 
 function Projects() {
@@ -58,8 +79,8 @@ function Projects() {
           WORK
         </div>
 
-        <div className="card-box inline-flex items-start gap-8">
-          <div className="flex-col inline-flex items-start relative flex-[0 0 auto] gap-10">
+        <div className="card-box flex justify-center gap-8">
+          <div className="flex flex-col gap-10">
             <Link to="/auferaComp/aufera">
               <LabelledCard>
                 <LargeCard imgSrc={Aufera} imgAlt="Aufera" />
@@ -85,7 +106,7 @@ function Projects() {
             </Link>
           </div>
 
-          <div className="flex-col inline-flex items-start relative flex-[0 0 auto] gap-[40px]">
+          <div className=" flex flex-col gap-[40px]">
             <Link to="/moovasComp/moovas">
               <LabelledCard>
                 <SmallCard imgSrc={Moovas} imgAlt="Moovas" />
@@ -110,6 +131,35 @@ function Projects() {
               </LabelledCard>
             </Link>
           </div>
+        </div>
+
+        <div className="mobile-card-box flex flex-col items-center gap-6 md:hidden">
+          <Link to="/auferaComp/aufera">
+            <MobileCard imgSrc={AuferaMobile} imgAlt="Aufera" />
+          </Link>
+
+          <Link to="/mechoWebComp/mechoWebsite">
+            <MobileCard
+              imgSrc={MechoWebMobile}
+              imgAlt="Mecho Website Redesign"
+            />
+          </Link>
+
+          <Link to="/acomartComp/acomart">
+            <MobileCard imgSrc={AcomartMobile} imgAlt="Acomart" />
+          </Link>
+
+          <Link to="/moovasComp/moovas">
+            <MobileCard imgSrc={MoovasMobile} imgAlt="Moovas" />
+          </Link>
+
+          <Link to="/parkstarComp/parkstar">
+            <MobileCard imgSrc={ParkstarMobile} imgAlt="Parkstar" />
+          </Link>
+
+          <Link to="/mechoEnterpriseComp/mechoEnterprise">
+            <MobileCard imgSrc={MechoEmobile} imgAlt="Mecho Enterprise" />
+          </Link>
         </div>
       </div>
     </div>
