@@ -5,7 +5,7 @@ import mobileHeader from "./parkstar images/mobile header.png";
 function CaseStudy() {
   return (
     <div className="CaseStudy mx-6 md:mx-[72px]">
-      <h1 className="flex mt-[40px] font-black font-largescreen-largedisplay text-left text-4xl md:text-[80px] leading-10 md:eading-[80px]">
+      <h1 className="flex mt-[40px] font-black font-largescreen-largedisplay text-left text-4xl md:text-[80px] leading-10 md:leading-[80px]">
         Parkstar (Exploration)
       </h1>
       <p className="flex mt-[16px]">
